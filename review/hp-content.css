@@ -1,0 +1,39 @@
+@charset "UTF-8";
+main section.adv {
+    display: flex;
+    justify-content: space-around;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin-block: -5px -2rem;
+}
+
+main section.adv div.box {
+    width: 30em;
+    padding: 1em;
+    text-align: center;
+}
+main section.adv div.box i {
+    font-size: 5rem;
+}
+
+main section.adv div.box h2 {
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main section.adv div.box span {
+    font-size: 1.25rem;
+    margin-top: -5rem;
+}
+
+div.box:first-child i, div.box:first-child h2 { color: orange; }
+div.box:nth-child(2) i, div.box:nth-child(2) h2 { color: lime; }
+div.box:nth-child(3) i, div.box:nth-child(3) h2 { color:deepskyblue }
+
+section.products-banner img {
+    width: 100%;
+}

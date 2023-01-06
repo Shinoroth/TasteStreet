@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
+@import url('navbar.css');
+@import url('products.css');
+@import url('hp-content.css');
+@import url('contact-form.css');
+@import url('pricing.css');
+@import url('gallery.css');
+
+:root {
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: orange;
+    --elementary-color: rgb(0, 0, 0);
+    --background-color: rgb(11, 11, 11);
+    --xmark-color: rgb(255, 0, 0);
+    --text-color: rgb(0, 0, 0);
+    --button-color: orange;
+    --button-hover-color: rgb(201, 131, 0);
+    --additional-color: #fff1a4; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    color: var(--text-color);
+}
+
+*::before, *::after {
+    padding: inherit;
+    margin: inherit;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 5em;
+    background-color: white;
+    color: #000;
+}
+
+header div.logo {
+    position: absolute;
+    text-transform: uppercase;
+    left: 1em;
+    font-size: 1.25rem;
+    line-height: 5rem;
+    font-weight: 900;
+}
+
+header .logo a {
+    text-decoration: none;
+}
+
+span.taste {
+    color: #fff1a4;
+    text-shadow: 2px 2px 0 black;
+}
+span.street {
+    color: rgb(255, 133, 40);
+    text-shadow: 2px 2px 0 black;
+}
+
+@media screen and (min-width: 1024px) {
+    main section.adv div.box {
+        margin-block: 5em;
+    }
+}
+
+section.main-img img {
+    width: 100%;
+}
+
+.description {
+    font-size: 1.5em;
+    width: 90em; 
+    text-align: justify;
+    margin: auto;
+    padding-block: 5em 1em;
+}
+
+@media screen and (max-width: 150em) {
+    .description {
+        font-size: 1.25em;
+        width: 70em; 
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 90em) {
+    .description {
+        font-size: 1.25em;
+        width: 40em; 
+    }
+}
+
+@media screen and (max-width: 63.95em) {
+    .description {
+        font-size: 1.25em;
+        width: 30em; 
+    }
+}
+
+@media screen and (max-width: 43.95em) {
+    .description {
+        font-size: 1.25em;
+        width: 25em; 
+    }
+}
+
+@media screen and (max-width: 33.95em) {
+    .description {
+        font-size: 1.25em;
+        width: 20em; 
+    }
+}
+
+
+footer {
+    height: 5em;
+    display: flex;
+    width: 100%;
+    color: black;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.5rem, 1rem, 1.25rem);
+    letter-spacing: 0.25em;
+    word-spacing: 0.25em;
+    background-color: #fff;
+}

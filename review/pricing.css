@@ -1,0 +1,44 @@
+.space {
+    display: block;
+    height: 4em;
+}
+
+.container-pricing h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding-block: 1em .5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 5em;
+    table-layout: fixed; 
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  #scrollTopBtn {
+    background-color: #4CAF50; 
+    border: none;
+    --text-color: #fff;
+    color: var(--text-color);
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20em;
+    margin-block: -3em 2em;
+  }

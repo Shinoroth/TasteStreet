@@ -1,0 +1,118 @@
+nav input {
+    display: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    display: block;
+}
+
+header .uil {
+    display: none;
+}
+
+header nav ul {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    justify-content: right;
+    margin-right: 3em;
+    line-height: 5em;
+    text-align: center;
+    display: flex;
+    list-style-type: none;
+}
+    
+header nav ul li {
+    width: 5em;
+    height: 5em;
+}
+    
+header nav ul li:hover {
+    background-color: lightgrey;
+}
+    
+header nav ul a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav input:checked ~ ul.menu-list {
+    right: -5em;
+}
+
+.menu-list li:last-child {
+    background-color: #343434;
+    border-radius: 24px;
+    height: 2.25em;
+    padding-inline: 0.25em;
+    margin-top: 1.25em;
+    margin-left: 0.5em;
+    line-height: 2.25em;
+    --text-color: #fff;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 63.95em) {
+    .menu-button {
+        display: flex;
+        justify-content: right;
+        margin-right: 2em;
+        z-index: 2;
+    }
+
+    .toggle-menu {
+        position: fixed;
+        z-index: 5;
+        width: 30px;
+        height: 100%;
+        z-index: 3;
+        cursor: pointer;
+        margin-right: -1.15em;
+        margin-top: -0.15em;
+        top: -0.25em;
+        right: 2.45em;
+        opacity: 0;
+    }
+
+    header .uil {
+        display: block;
+        margin-right: -0.25em;
+    }
+
+    nav input { display: block; }
+    nav input:is(:checked) ~ .uil-times { opacity: 1; }
+    nav input:is(:checked) .uil-bars { opacity: 0; }
+    
+    ul.menu-list {
+        position: fixed;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 32em;
+        background-color: var(--primary-color);
+        width: 20em;
+        height: 100%;
+        right: -25em;
+    }
+
+    .menu-list li:last-child {
+        background-color: #343434;
+        width: 5em;
+        padding-inline: 0.5em;
+        margin-left: -0.25em;
+    }
+
+    header nav ul li {
+        width: 20em;
+        height: 5em;
+    }
+
+    .uil-bars, .uil-times {
+        display: block;
+        font-size: 3rem;
+        color: var(--text-color);
+    }
+}
